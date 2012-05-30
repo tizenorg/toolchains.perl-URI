@@ -13,7 +13,7 @@ Group:      Development/Libraries
 License:    GPL+ or Artistic
 BuildArch:  noarch
 URL:        http://search.cpan.org/dist/URI/
-Source0:    http://www.cpan.org/authors/id/G/GA/GAAS/URI-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.bz2
 Source100:  perl-URI.yaml
 Requires:   perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 BuildRequires:  perl(MIME::Base64)
@@ -30,7 +30,7 @@ updated by RFC 2732).
 
 
 %prep
-%setup -q -n URI-%{version}
+%setup
 
 # >> setup
 chmod 644 uri-test
