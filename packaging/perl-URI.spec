@@ -61,4 +61,4 @@ make test
 %defattr(-,root,root,-)
 %doc Changes README uri-test
 %{perl_vendorlib}/URI*
-#%doc %{_mandir}/man3/*.3*
+%doc %{_mandir}/man3/*.3*
