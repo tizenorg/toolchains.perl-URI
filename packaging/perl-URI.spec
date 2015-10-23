@@ -50,6 +50,12 @@ fi
 
 # >> build post
 # << build post
+
+%check
+# >> check
+make test
+# << check
+
 %install
 rm -rf %{buildroot}
 # >> install pre
@@ -74,13 +80,6 @@ done
 
 
 # << install post
-%check
-# >> check
-make test
-# << check
-
-
-
 
 
 
